@@ -1,0 +1,109 @@
+.section-3 {
+  padding: 0 8px;
+
+  margin: 57px 8px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+
+  align-self: center;
+
+  height: auto;
+
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+
+  @media (min-width: $max-content-width) {
+    max-width: 1210px;
+    height: 864px;
+
+    padding: 0 16px;
+  }
+
+  &__title {
+    font-family: "BBC Reith Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    margin-top: 30px;
+    margin-bottom: 48px;
+
+    @media (min-width: $min-desktop-width) {
+      font-size: 28px;
+
+      margin: 43px 0;
+    }
+  }
+
+  &__list {
+    height: auto;
+
+    margin-left: 8px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+
+    @media (min-width: $max-content-width) {
+      margin-left: 32px;
+
+      width: 1200px;
+      height: 639px;
+    }
+  }
+
+  &__item {
+    width: auto;
+
+    position: relative;
+
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 35px;
+
+    color: $c-darck-gray;
+    list-style: none;
+
+    margin: 10px;
+
+    @media (min-width: $max-content-width) {
+      width: 500px;
+    }
+
+    @for $i from 1 through 14 {
+      &:nth-child(#{$i}) {
+        &:before {
+          content: "#{$i}";
+
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          height: 22px;
+          width: 22px;
+          line-height: 22px;
+          text-align: center;
+
+          top: 5px;
+          left: -40px;
+
+          font-size: 12px;
+          font-weight: bold;
+
+          color: $c-darck-gray;
+
+          border: 2px solid $c-darck-gray;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

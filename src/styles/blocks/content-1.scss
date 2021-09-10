@@ -1,0 +1,179 @@
+.content-1 {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  max-width: $max-content-width;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0 10px;
+  }
+
+  &__wrapper {
+    margin-top: 56px;
+
+    max-width: $max-content-width;
+    width: 100%;
+  
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "title"
+      "img1"
+      "description"
+      "img2"
+      "text";
+  
+    @media (min-width: $min-desktop-width) {
+      margin-top: 103px;
+      justify-content: space-between;
+  
+      grid-template-areas:
+        "title img1"
+        "description img1"
+        "img2 text";
+    }  
+  }
+
+  &__title {
+    position: relative;
+    grid-area: title;
+
+    font-family: BBC Reith Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: $c-dark-blue;
+    line-height: 45px;
+
+    margin-bottom: 60px;
+
+    @media (min-width: $min-desktop-width) {
+      line-height: 65px;
+      font-size: 48px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+
+      bottom: -30px;
+
+      height: 6px;
+      width: 227px;
+
+      background-color: $c-gray-2;
+
+      @media (min-width: $min-desktop-width) {
+        bottom: 0;
+      }
+    }
+  }
+
+  &__description1 {
+    position: relative;
+
+    grid-area: description;
+
+    max-width: 512px;
+
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+
+    &::after {
+      background: none;
+
+      @media (min-width: $min-desktop-width) {
+        position: absolute;
+        display: block;
+        content: "";
+  
+        bottom: 0;
+  
+        height: 6px;
+        width: 227px;
+  
+        background-color: $c-gray-2;
+      }
+    }
+  }
+
+  &__img1-container {
+    grid-area: img1;
+    margin-bottom: 30px;
+
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__image1 {
+    justify-self: start;
+
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__img2-container {
+    grid-area: img2;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__image2 {
+    margin-top: 40px;
+    
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    @media (min-width: $min-desktop-width) {
+      margin-top: 140px;
+      width: 100%;
+    }
+  }
+
+  &__description2 {
+    margin-top: 40px;
+    grid-area: text;
+
+    width: 100%;
+
+    justify-self: start;
+
+    @media (min-width: $min-desktop-width) {
+      margin-top: 140px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 23px;
+
+    font-family: 'BBC Reith Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+
+    color: $c-dark-blue;
+  }
+
+  &__paragraph {
+    max-width: 475px;
+    font-family: "Noto Sans";
+    font-size: 17px;
+    line-height: 32px;
+  }
+}

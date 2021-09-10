@@ -1,0 +1,66 @@
+.footer {
+  height: 530px;
+
+  width: 100vw;
+
+  @media (min-width: $min-desktop-width) {
+    height: 212px;
+  }
+
+  box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.2);
+
+  &__container {
+    height: 100%;
+    padding: 40px 16px 0;
+
+    margin: 0 auto;
+
+    max-width: $max-content-width;
+
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    @media (min-width: $min-desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 40px 10px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 32px;
+
+    color: $c-gray-footer;
+  }
+
+  &__address,
+  &__phone,
+  &__email,
+  &__link {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+
+    color: $c-gray-footer-2;
+
+    margin: 0;
+  }
+
+  &__phone::after {
+    content: ' +49 (0) 211 9232 3052';
+    color: $c-darck-gray-3;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="21" height="3" viewBox="0 0 21 15.005" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g style="filter: url(#outline-filter-0);">
+    <rect width="21" height="3" rx="1" style="stroke-width: 2px; stroke-linecap: round; stroke-miterlimit: 5; fill: rgb(46, 117, 255);"/>
+  </g>
+  <defs>
+    <filter id="outline-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="outline 1 0 #bada55">
+      <feMorphology in="SourceAlpha" result="dilated" operator="dilate" radius="0"/>
+      <feFlood flood-color="#bada55" result="flood"/>
+      <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
+      <feMerge>
+        <feMergeNode in="outline"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -0.000001, 5.987157)" style="filter: url(#outline-filter-0);">
+    <rect width="21" height="3" rx="1" style="stroke-width: 2px; stroke-linecap: round; stroke-miterlimit: 5; fill: rgb(46, 117, 255);"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 11.998208)" style="filter: url(#outline-filter-0);">
+    <rect width="21" height="3" rx="1" style="stroke-width: 2px; stroke-linecap: round; stroke-miterlimit: 5; fill: rgb(46, 117, 255);"/>
+  </g>
+</svg>

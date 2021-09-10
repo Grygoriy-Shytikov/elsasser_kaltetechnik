@@ -1,0 +1,67 @@
+.content-3 {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  max-width: $max-content-width;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0 10px;
+    flex-direction: row;
+  }
+
+
+  &__description {  
+    width: 100%;
+    max-width: 556px;
+  }
+
+  &__subtitle {
+    max-width: 426px;
+    width: 100%;
+
+    font-family: "BBC Reith Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $c-dark-blue;
+
+    margin-bottom: 40px;
+
+    @media (min-width: $min-desktop-width) {
+      font-size: 20px;
+      text-align: start;
+    }
+  }
+
+  &__paragraph {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  &__img-container {
+    max-width: 600px;
+    max-height: 500px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+    object-position: left;
+  }
+}
