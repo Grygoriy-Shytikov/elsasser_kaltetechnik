@@ -49,7 +49,7 @@
 
     height: 16px;
     width: 21px;
-    background: url(/src/icons/toggler_open_menu.svg);
+    background-image: url(/src/icons/toggler_open_menu.svg);
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@
   }
 
   &__checkbox:checked + &__nav-toggler {
-    background: url(/src/icons/toggler_close_menu.svg);
+    background: url(src/icons/toggler_close_menu.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
