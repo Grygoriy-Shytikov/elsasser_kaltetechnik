@@ -77,7 +77,7 @@ h3 {
   display: none;
 }
 .header__checkbox:checked + .header__nav-toggler {
-  background: url(src/icons/toggler_close_menu.svg);
+  background: url(/src/icons/toggler_close_menu.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,12 +161,12 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle::after {
-  content: url(../../../src/icons/toggle.svg);
+  content: url(/src/icons/toggle.svg);
   padding-left: 5px;
   align-self: flex-end;
 }
 .nav__toggle:hover:after {
-  content: url(../../../src/icons/toggle-active.svg);
+  content: url(/src/icons/toggle-active.svg);
 }
 .nav__toggle.show {
   border: 2px solid #eaedf5;
@@ -174,7 +174,7 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle.show:after {
-  content: url(../../../src/icons/toggle-active.svg);
+  content: url(/src/icons/toggle-active.svg);
 }
 
 .dropdown-menu {
