@@ -12,13 +12,13 @@ h3 {
 
 @font-face {
   font-family: "BBC Reith Sans";
-  src: url(src/fonts/BBCReithSans_W_Bd.woff) format("woff");
+  src: url(/src/fonts/BBCReithSans_W_Bd.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "BBC Reith Sans";
-  src: url(src/fonts/BBCReithSans_W_Md.woff) format("woff");
+  src: url(/src/fonts/BBCReithSans_W_Md.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -161,13 +161,12 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle::after {
-  content: url("../../../src/icons/toggle.svg");
-  content: scr("../../../src/icons/toggle.svg");
+  content: url(../../../src/icons/toggle.svg);
   padding-left: 5px;
   align-self: flex-end;
 }
 .nav__toggle:hover:after {
-  content: url("../../../src/icons/toggle-active.svg");
+  content: url(../../../src/icons/toggle-active.svg);
 }
 .nav__toggle.show {
   border: 2px solid #eaedf5;
@@ -175,7 +174,7 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle.show:after {
-  content: url("../../../src/icons/toggle-active.svg");
+  content: url(../../../src/icons/toggle-active.svg);
 }
 
 .dropdown-menu {
@@ -1177,7 +1176,7 @@ h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(src/icons/Arrow.png);
+  background-image: url(/src/icons/arrow.svg);
   background-repeat: no-repeat;
   right: 0;
   top: 23px;
