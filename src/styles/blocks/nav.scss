@@ -101,7 +101,8 @@
     background-image: url(../../src/icons/toggle.svg);
     background-repeat: no-repeat;
 
-    margin-left: 3px;
+    margin-left: 4px;
+    align-self: center
   }
 
   &__toggle:hover:after {
@@ -131,6 +132,30 @@
     background-image: url(../../src/icons/toggle-active.svg);
     background-repeat: no-repeat;
   }
+
+  //------------------------------------------------
+
+  // &__toggle::after {
+  //   content: url(../../src/icons/toggle.svg);
+  //   padding-left: 5px;
+  //   align-self: flex-end;
+  // }
+
+  // &__toggle:hover:after {
+  //   content: url(../../src/icons/toggle-active.svg);
+  // }
+
+  // &__toggle.show {
+  //   border: 2px solid $c-gray;
+  //   border-radius: 8px;
+  //   color: $c-light-blue;
+  // }
+
+  // &__toggle.show:after {
+  //   content: url(../../src/icons/toggle-active.svg);
+  // }
+
+  //---------------------------------------------------
 }
 
 .dropdown-menu {

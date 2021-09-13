@@ -167,7 +167,8 @@ h3 {
   width: 15px;
   background-image: url(../../src/icons/toggle.svg);
   background-repeat: no-repeat;
-  margin-left: 3px;
+  margin-left: 4px;
+  align-self: center;
 }
 .nav__toggle:hover:after {
   content: "";
