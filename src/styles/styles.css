@@ -996,6 +996,16 @@ h3 {
     margin: 53px 0;
   }
 }
+.section-4__carousel-inner {
+  width: auto;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .section-4__carousel-inner {
+    width: 610px;
+    height: 813px;
+  }
+}
 .section-4__control {
   display: none;
 }

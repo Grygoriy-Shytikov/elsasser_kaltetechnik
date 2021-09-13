@@ -33,6 +33,16 @@
     }
   }
 
+  &__carousel-inner {
+    width: auto;
+    height: auto;
+
+    @media (min-width: $min-desktop-width) {
+      width: 610px;
+      height: 813px;
+    }
+  }
+
   &__control {
     display: none;
 
