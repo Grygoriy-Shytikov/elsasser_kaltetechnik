@@ -161,12 +161,12 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle::after {
-  content: url(/src/icons/toggle.svg);
+  content: url(../../../src/icons/toggle.svg);
   padding-left: 5px;
   align-self: flex-end;
 }
 .nav__toggle:hover:after {
-  content: url(/src/icons/toggle-active.svg);
+  content: url(../../../src/icons/toggle-active.svg);
 }
 .nav__toggle.show {
   border: 2px solid #eaedf5;
@@ -174,7 +174,7 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle.show:after {
-  content: url(/src/icons/toggle-active.svg);
+  content: url(../../../src/icons/toggle-active.svg);
 }
 
 .dropdown-menu {
@@ -452,7 +452,7 @@ h3 {
 }
 .content-2__description__container {
   max-width: 496px;
-  padding: 0 8px;
+  padding: 0 16px;
 }
 @media (min-width: 1024px) {
   .content-2__description__container {
@@ -461,7 +461,7 @@ h3 {
 }
 .content-2__subtitle {
   color: #FBFDFF;
-  margin: 39px 8px 16px;
+  margin: 39px 0 16px;
   font-family: "BBC Reith Sans";
   font-style: normal;
   font-weight: bold;
@@ -470,7 +470,7 @@ h3 {
 }
 @media (min-width: 1024px) {
   .content-2__subtitle {
-    margin: 22px 8px;
+    margin: 22px 0;
     font-size: 20px;
   }
 }
@@ -481,7 +481,7 @@ h3 {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
-  margin: 0 8px 25px;
+  margin: 0 0 25px;
 }
 @media (min-width: 1024px) {
   .content-2__paragraph {
