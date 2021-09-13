@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist/css src/scss -w",
-    "sass": "sass src/styles/styles.scss dist/css/styles.css --watch",
+    "sass": "sass src/styles/styles.scss src/styles/styles.css --watch",
     "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
     "watch:css": "onchange 'src/scss' -- npm run scss",
     "start": "run-p serve watch:css sass"
