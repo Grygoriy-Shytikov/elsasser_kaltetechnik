@@ -77,13 +77,16 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 32px;
 
     color: $c-darck-gray;
 
     margin: 0 36px 0 0 ;
 
+    @media (min-width: $min-desktop-width) {
+      font-size: 19px;
+    }
   }
 
   &__icon {

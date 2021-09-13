@@ -470,7 +470,7 @@ h3 {
 }
 @media (min-width: 1024px) {
   .content-2__subtitle {
-    margin: 22px auto;
+    margin: 22px 8px;
     font-size: 20px;
   }
 }
@@ -615,10 +615,15 @@ h3 {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 32px;
   color: #45494f;
   margin: 0 36px 0 0;
+}
+@media (min-width: 1024px) {
+  .section-2__text {
+    font-size: 19px;
+  }
 }
 .section-2__icon {
   margin: 38px;
