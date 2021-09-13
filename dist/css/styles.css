@@ -12,7 +12,7 @@ h3 {
 
 @font-face {
   font-family: "BBC Reith Sans";
-  src: url(./elsasser_kaltetechnik/src/fonts/BBCReithSans_W_Md.woff2) format("woff2");
+  src: url(../elsasser_kaltetechnik/src/fonts/BBCReithSans_W_Bd.woff2) format("woff2");
   font-weight: bold;
   font-style: normal;
 }
