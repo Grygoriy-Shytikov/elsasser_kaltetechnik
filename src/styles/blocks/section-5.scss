@@ -2,7 +2,7 @@
   height: 100%;
   padding: 0 8px;
 
-  margin: 0 auto 87px;
+  margin: 0 auto 50px;
 
   width: 100%;
   max-width: $max-content-width;
@@ -10,30 +10,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   @media (min-width: $min-desktop-width) {
-    margin: 0 auto 113px;
+    margin: 0 auto 77px;
     padding: 0 16px;
   }
 
   &__title {
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 40px;
+    @extend %title-1;
+    letter-spacing: 2.42px;
 
     text-align: center;
-
-    margin-top: 43px;
-    margin-bottom: 48px;
-
-    margin: 0;
-
-    @media (min-width: $min-desktop-width) {
-      font-size: 24px;
-      margin: 53px 0;
-    }
   }
 
   &__container1 {
@@ -46,7 +34,7 @@
     flex-wrap: wrap;
     gap: 8px;
 
-    @media (min-width: 1165px) {
+    @media (min-width: 1205px) {
       justify-content: start;
     }
 
@@ -66,6 +54,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 40px;
+    letter-spacing: 1.42px;
 
     border: 1px solid $c-white;
     border-radius: 12px;
@@ -83,127 +72,5 @@
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
       color: $c-gray-2;
     }
-  }
-
-  &__container2 {
-    position: relative;
-
-    width: 100%;
-
-    margin: 113px 0 0;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "logo"
-      "title"
-      "paragraph ";
-
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: $min-desktop-width) {
-      grid-template-columns: 40% 1fr 1fr;
-      grid-template-areas: "title paragraph logo";
-      margin: 73px 0 0;
-    }
-  }
-
-  &__btn-contact {
-    position: relative;
-
-    height: 64px;
-    width: 100%;
-  
-    margin: 20px auto 0;
-
-    color: $c-white;
-
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 40px;
-
-    border: 1px solid $c-white;
-    border-radius: 12px;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.21);
-
-    background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%), #004fc7;
-
-    @media (min-width: $min-desktop-width) {
-      height: 66px;
-      width: 306px;
-    }
-
-    &:active {
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-      color: $c-gray-2;
-    }
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-
-      background-image: url(../../src/icons/arrow.svg);
-      background-repeat: no-repeat;
-      right: 0;
-      top: 23px;
-    }
-  }
-
-  &__subtitle {
-    justify-self: center;
-    grid-area: title;
-
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: bold;
-
-    font-size: 26px;
-    line-height: 43px;
-    text-align: center;
-    word-wrap: wrap;
-
-    margin: 0 0 40px 0;
-
-    color: $c-dark-blue;
-    
-    @media (min-width: $min-desktop-width) {
-      justify-self: start;
-      font-size: 34px;
-    }
-  }
-
-  &__paragraph {
-    grid-area: paragraph;
-
-    width: auto;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 32px;
-
-    justify-self: center;
-    align-self: center;
-
-    color: $c-darck-gray-3;
-
-    @media (min-width: $min-desktop-width) {
-      width: 420px;
-    }
-  }
-
-  &__logo2 {
-    grid-area: logo;
-    align-self: center;
-    justify-self: center;
-
-    margin-bottom: 40px;
   }
 }

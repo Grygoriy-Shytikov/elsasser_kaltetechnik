@@ -13,7 +13,7 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "img text";
-    margin: 120px 0 91px 0;
+    margin: 120px 0 0 0;
   }
 
   &__img-container {
@@ -61,15 +61,10 @@
 
     margin: 39px 0 16px;
 
-    font-family: 'BBC Reith Sans';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 40px;
+    @extend %title-2;
 
     @media (min-width: $min-desktop-width) {
       margin: 22px 0;
-      font-size: 20px;
     }
   }
 

@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 1;
 
   align-self: center;
 
@@ -18,26 +17,11 @@
 
   @media (min-width: $max-content-width) {
     max-width: 1210px;
-    height: 864px;
-
     padding: 0 16px;
   }
 
   &__title {
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 40px;
-
-    margin-top: 30px;
-    margin-bottom: 48px;
-
-    @media (min-width: $min-desktop-width) {
-      font-size: 28px;
-
-      margin: 43px 0;
-    }
+    @extend %title-1;
   }
 
   &__list {
@@ -67,6 +51,7 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 35px;
+    letter-spacing: -0.4px;
 
     color: $c-darck-gray;
     list-style: none;

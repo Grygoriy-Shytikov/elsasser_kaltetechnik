@@ -17,18 +17,11 @@
   }
 
   &__title {
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 40px;
+    @extend %title-1;
 
-    margin-top: 43px;
-    margin-bottom: 48px;
+    margin: 43px 0;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 28px;
-
       margin: 53px 0;
     }
   }

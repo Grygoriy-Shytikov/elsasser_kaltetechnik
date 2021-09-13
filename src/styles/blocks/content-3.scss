@@ -1,6 +1,5 @@
 .content-3 {
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 auto;
 
   max-width: $max-content-width;
   width: 100%;
@@ -11,34 +10,29 @@
   align-items: center;
 
   @media (min-width: $min-desktop-width) {
-    padding: 0 10px;
     flex-direction: row;
   }
-
 
   &__description {  
     width: 100%;
     max-width: 556px;
+
+    margin: 0 auto;
+
+    padding: 0 8px;
   }
 
   &__subtitle {
-    max-width: 426px;
+    max-width: 500px;
     width: 100%;
 
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: center;
+    @extend %title-2;
 
     color: $c-dark-blue;
 
     margin-bottom: 40px;
 
     @media (min-width: $min-desktop-width) {
-      font-size: 20px;
       text-align: start;
     }
   }
@@ -52,16 +46,20 @@
   }
 
   &__img-container {
-    max-width: 600px;
-    max-height: 500px;
-  }
-
-  &__img {
     width: 100%;
-    height: 100%;
+    height: 250px;
 
+    background-image: url(../../src/images/content-img-4a.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-    object-fit: cover;
-    object-position: left;
+    @media (min-width: $min-desktop-width) {
+      width: 100%;
+      height: 500px;
+
+      background-position: 25% 75%;
+      background-size: contain;
+    }
   }
 }

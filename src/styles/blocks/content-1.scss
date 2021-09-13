@@ -49,6 +49,7 @@
     font-size: 34px;
     color: $c-dark-blue;
     line-height: 45px;
+    letter-spacing: -0.4px;
 
     margin-bottom: 60px;
 
@@ -161,11 +162,7 @@
   &__subtitle {
     margin-bottom: 23px;
 
-    font-family: 'BBC Reith Sans';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 40px;
+    @extend %title-2;
 
     color: $c-dark-blue;
   }

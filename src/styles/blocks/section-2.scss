@@ -18,23 +18,7 @@
   }
 
   &__title {
-    font-family: "BBC Reith Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 40px;
-
-    margin-top: 30px;
-    margin-bottom: 48px;
-
-    color: $c-darck-gray-2;
-
-    @media (min-width: $min-desktop-width) {
-      font-size: 28px;
-
-      margin-top: 62px;
-      margin-bottom: 71px;
-    }
+    @extend %title-1;
   }
 
   &__list {
@@ -60,13 +44,13 @@
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
 
     @media (min-width: $min-desktop-width) {
       width: 394px;
     }
-
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
   }
 
   &__item:last-child {
@@ -79,6 +63,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
+    letter-spacing: -0.4px;
 
     color: $c-darck-gray;
 
