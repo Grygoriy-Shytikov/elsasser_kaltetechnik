@@ -161,12 +161,21 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle::after {
-  content: url(../../src/icons/toggle.svg);
-  padding-left: 5px;
-  align-self: flex-end;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 15px;
+  background-image: url(../../src/icons/toggle.svg);
+  background-repeat: no-repeat;
+  margin-left: 3px;
 }
 .nav__toggle:hover:after {
-  content: url(../../src/icons/toggle-active.svg);
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 15px;
+  background-image: url(../../src/icons/toggle-active.svg);
+  background-repeat: no-repeat;
 }
 .nav__toggle.show {
   border: 2px solid #eaedf5;
@@ -174,7 +183,12 @@ h3 {
   color: #2e75ff;
 }
 .nav__toggle.show:after {
-  content: url(../../src/icons/toggle-active.svg);
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 15px;
+  background-image: url(../../src/icons/toggle-active.svg);
+  background-repeat: no-repeat;
 }
 
 .dropdown-menu {

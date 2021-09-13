@@ -92,13 +92,27 @@
   }
 
   &__toggle::after {
-    content: url(../../src/icons/toggle.svg);
-    padding-left: 5px;
-    align-self: flex-end;
+    content: '';
+    display: inline-block;
+
+    height: 10px;
+    width: 15px;
+
+    background-image: url(../../src/icons/toggle.svg);
+    background-repeat: no-repeat;
+
+    margin-left: 3px;
   }
 
   &__toggle:hover:after {
-    content: url(../../src/icons/toggle-active.svg);
+    content: '';
+    display: inline-block;
+
+    height: 10px;
+    width: 15px;
+
+    background-image: url(../../src/icons/toggle-active.svg);
+    background-repeat: no-repeat;
   }
 
   &__toggle.show {
@@ -108,7 +122,14 @@
   }
 
   &__toggle.show:after {
-    content: url(../../src/icons/toggle-active.svg);
+    content: '';
+    display: inline-block;
+
+    height: 10px;
+    width: 15px;
+
+    background-image: url(../../src/icons/toggle-active.svg);
+    background-repeat: no-repeat;
   }
 }
 
